@@ -26,9 +26,15 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
+port: 8000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
