@@ -1,3 +1,39 @@
-body
-  font-family: 'Noto Sans'
-  background: pink
+header
+  @include outer-container
+  height: 140px
+
+  h1
+    @include span-columns(6)
+    font-size: 48px
+    padding-left: 70px
+
+  nav
+    float: right
+    margin: 59px 63px 0 0
+
+    a
+      display: inline-block
+      margin-left: 50px
+
+      font:
+        size: 16px
+        weight: 700
+
+
+@media only screen and (max-width: 900px)
+  header
+    height: 80px
+
+    h1
+      font-size: 19px
+      padding-left: 20px
+
+    nav
+      @include span-columns(6)
+      margin: 32px 0 0 0
+
+      a
+        margin-left: 10px
+        font:
+          size: 12px
+
