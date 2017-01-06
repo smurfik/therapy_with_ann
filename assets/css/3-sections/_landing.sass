@@ -1,5 +1,10 @@
 .landing
-  height: 700px
+  clear: both
+  height: calc(100% - 140px)
+  position: relative
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
 
   img
     display: block
@@ -7,3 +12,22 @@
     max-width: 1200px
     margin-left: auto
     margin-right: auto
+
+  p
+    position: absolute
+    bottom: 50px
+    left: calc((100% - 777px)/2)
+    font:
+      size: 18px
+      style: italic
+    color: $primary-color
+
+@media only screen and (max-width: 900px)
+  .landing
+    p
+      width: 100%
+      left: 0px
+      bottom: 5px
+      text-align: center
+      font:
+        size: 12px
