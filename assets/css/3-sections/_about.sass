@@ -3,6 +3,32 @@
 
   .about
     @include outer-container
+    clear: both
 
     h3
       @extend %title-font
+
+      margin-top: 0
+      padding-top: 28px
+
+    img
+      @include span-columns(3)
+      @include shift(1)
+
+    .info
+      @include span-columns(8)
+
+      p
+        text-align: justify
+        text-indent: 1.5em
+
+      p:first-of-type
+        margin-top: 0
+
+@media only screen and (max-width: 900px)
+  .set-background
+    .about
+      h3
+        font-size: 16px
+      p
+        font-size: 12px
