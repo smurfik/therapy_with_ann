@@ -1,0 +1,23 @@
+.approach
+  @include outer-container
+
+  h3
+    @extend %title-font
+
+  p
+    @include span-columns(10)
+    @include shift(1)
+    text-align: center
+
+  p:first-of-type
+    margin-top: 0
+
+  p:last-of-type
+    margin-bottom: 28px
+
+@media only screen and (max-width: 900px)
+  .approach
+    h3
+      font-size: 16px
+    p
+      font-size: 12px
