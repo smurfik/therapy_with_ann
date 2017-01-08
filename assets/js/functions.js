@@ -1,5 +1,5 @@
 $(function() {
-  smoothScrool(1000);
+  smoothScrool(500);
 });
 
 function smoothScrool (duration) {
