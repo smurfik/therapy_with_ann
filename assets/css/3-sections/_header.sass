@@ -4,7 +4,7 @@ header
 
   .wrap-header
     position: fixed
-    display: flex
+    +display(flex)
     z-index: 1
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5)
 
@@ -20,21 +20,25 @@ header
   nav
     background: $bg-color
     float: right
-    padding-top: 59px
     width: 600px
-    display: flex
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
     z-index: 1
 
     a
       display: inline-block
-      width: 200px
-      margin-left: 50px
-      text-align: center
-
       font:
         size: 16px
         weight: 700
 
+@media only screen and (max-width: 1200px)
+  header
+    h1
+      width: 50vw
+
+    nav
+      width: 50vw
 
 @media only screen and (max-width: 900px)
   header
@@ -43,20 +47,7 @@ header
     h1
       font-size: 19px
       padding-left: 20px
-      width: 160px
 
     nav
-      width: 160px
-      padding-top: 45px
-
       a
-        width: 53px
-        margin-left: 0px
-        font:
-          size: 12px
-
-      a:first-of-type
-        padding-right: 6px
-
-      a:last-of-type
-        padding-right: 9px
+        font-size: 12px
