@@ -1,4 +1,6 @@
 // Typography
+h3
+  @extend %title-font
 
 // Links
 
@@ -19,3 +21,7 @@ body
   color: $text-color
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
+
+@media only screen and (max-width: 900px)
+  p
+    font-size: 12px
