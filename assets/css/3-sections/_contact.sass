@@ -23,7 +23,7 @@
         border-color: $text-color
 
     textarea
-      height: 10em
+      height: 12em
 
     .contact-info-group
       label
@@ -57,7 +57,10 @@
       text-transform: uppercase
       font-weight: 600
       width: 33%
-      margin-bottom: 20px
+      margin-bottom: 55px
+
+      @media only screen and (max-width: 900px)
+        margin-bottom: 20px
 
       &:hover
         background: $selection-color
@@ -73,6 +76,7 @@
 
     @media only screen and (max-width: 900px)
       @include span-columns(10)
+      margin-bottom: 50px
 
     h5
       font-size: 14px
