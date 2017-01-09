@@ -1,6 +1,10 @@
 .approach
   @include outer-container
 
+  h3
+    @media only screen and (max-width: 900px)
+      font-size: 16px
+
   p
     @include span-columns(10)
     @include shift(1)
@@ -11,8 +15,3 @@
 
   p:last-of-type
     margin-bottom: 28px
-
-@media only screen and (max-width: 900px)
-  .approach
-    h3
-      font-size: 16px
