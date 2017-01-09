@@ -3,4 +3,31 @@
   <span class="anchor" id="contact"></span>
   <h3>Contact Ann</h3>
 
+  <form action="https://formspree.io/{{ site.email }}"
+        method="POST">
+    <div class="contact-info-group">
+      <label><span>Name</span>
+      <input type="text" name="name"></label>
+
+      <label><span>Email</span>
+      <input type="email" name="_replyto"></label>
+    </div>
+    <label><span>Message</span>
+    <textarea name="message"></textarea></label>
+
+    <div class="submit-wrap">
+      <input type="submit" value="Send">
+    </div>
+  </form>
+
+  <div class="contact-info">
+    <h5>Email</h5>
+    <span>{{ site.email }}</span>
+    <h5>Telephone</h5>
+    <span>078 895 64 37</span>
+    <h5>Address</h5>
+    <span>Lausanne</span>
+    <span>Switzerland</span>
+  </div>
+
 </section>
